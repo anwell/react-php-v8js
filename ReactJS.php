@@ -77,7 +77,7 @@ class ReactJS {
    */
   function setComponent($component, $data = null) {
     $this->component = $component;
-    $this->data = json_encode($data);
+    $this->data = json_encode($data, JSON_NUMERIC_CHECK);
     return $this;
   }
 
