@@ -100,7 +100,7 @@ class ReactJS {
    */
   function getMarkup() {
     $js = sprintf(
-      "print(ReactDOMServer.renderToString(React.createElement(%s, %s)))",
+      "print(ReactDOMServer.renderToStaticMarkup(React.createElement(%s, %s)))",
       $this->component,
       $this->data);
 
